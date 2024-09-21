@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+    </style>
+</head>
+
+    <section class="testimail-container">
+        <h1 class="testimail-title">TESTIMONIALS</h1>
+            <div class="testimail-box" style="background-image: url('src/img/background.jpg');">
+            <div class="overlay"></div>
+            <button class="prev" onclick="cambiarTestimonial(-1)">&#10229;</button>
+            <div class="contenttestimonials">
+                <img id="profile-picture" src="src/img/client1.png" alt="Foto de perfil" class="testimail-profile-picture">
+                <div class="testimail-data-letters">
+                    <p id="testimonial-text" class="testimail-data-letters1">“The ease with which I can grow and care for my favorite plants is incredible. The Free plan helped me get started, and now, with the Premium plan, I’m experimenting with more challenging species. It’s an essential tool for any plant lover!” Premium, estoy experimentando con especies más desafiantes. ¡Es una herramienta esencial para cualquier amante de las plantas!</p>
+                    <h4 id="testimonial-name" class="testimail-data-letters2">Valeria Benitez</h4>
+                    <h5 id="testimonial-role" class="testimail-data-letters3">Regular Customer</h5>
+                </div>
+            </div>
+            <button class="next" onclick="cambiarTestimonial(1)">&#10230;</button>
+        </div> 
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    
+    </section>
+    <script src="src/scripts/script.js"></script>
+</html>

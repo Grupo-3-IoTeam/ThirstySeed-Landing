@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inria Sans", sans-serif; /* Tipo de letra */
+    font-size: 18px; /* Tamaño de letra general */
+}
+
+
+/*Testimonials*/
+
+.testimail-container {
+    display: grid;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 630px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimail-box {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 150px;
+    margin-top: 0px;
+}
+
+.testimail-profile-picture {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.testimail-data-letters2 {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.testimail-data-letters3 {
+    font-size: 10px;
+    color: green;
+    margin-top: -2px;
+
+}
+
+.testimail-data-letters1 {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.testimail-title {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenttestimonials {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    min-height: 300px; /* Fija una altura mínima */
+    max-height: 400px; /* Fija una altura máxima si lo prefieres */
+    width: 100%;
+}
+
+.prev {
+    margin-left: 100px;
+    margin-right: 10px;
+    height: 45px;
+    width: 97px;
+    font-size: 30px;
+    z-index: 10;
+}
+
+.next {
+    margin-left: 10px;
+    margin-right: 100px;
+    height: 45px;
+    width: 97px;
+    font-size: 30px;
+    z-index: 10;
+}
+
+.fade-out, .fade-in {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
