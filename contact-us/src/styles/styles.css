@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inria Sans", sans-serif; /* Tipo de letra */
+    font-size: 18px; /* Tamaño de letra general */
+}
+
+/*Contact Us Section*/
+.container {
+    flex: 1;
+}
+
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-us img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700; /* Grosor del título "TEAM" */
+}
+
+.contact-form .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #228B22;
+}
+
+@media (min-width: 640px) {
+    .contact-form h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contact-form h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .contact-form h1 {
+        font-size: 3rem;
+    }
+
+    .contact-form button {
+        font-size: 1.5rem;
+    }
+}
