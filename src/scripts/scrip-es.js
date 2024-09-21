@@ -1,23 +1,23 @@
-//falta resolver el error de testimonials
 const testimonios = [
     {
         img: 'src/img/client1.png',
-        texto: '“The ease with which I can grow and care for my favorite plants is incredible. The Free plan helped me get started, and now, with the Premium plan, Im experimenting with more challenging species. Its an essential tool for any plant lover!',
+        texto: '“La facilidad con la que puedo monitorear y optimizar el riego de mis cultivos es fantástica. El plan Free me dio la confianza para empezar, y ahora, con el plan Premium, estoy experimentando con el riego automatizado. ¡Es una herramienta vital para cualquier agricultor moderno!',
         nombre: 'Valeria Benitez',
-        rol: 'Regular Customer'
+        rol: 'Cliente Regular'
     },
     {
         img: 'src/img/client2.png',
-        texto: '"Managing my plants has never been easier. The Free plan gave me a solid start, and with the Premium plan, Ive been able to expand my collection and explore new plant species. This app is a must-have for any plant enthusiast!',
+        texto: '"Gestionar mi sistema de riego nunca ha sido más sencillo. El plan Free fue perfecto para comenzar, y el plan Premium me ha permitido automatizar y gestionar más sensores de manera eficiente. ¡Esta app es esencial para cualquiera que busque mejorar el riego de su granja!',
         nombre: 'James Peterson',
-        rol: 'Regular Customer'
+        rol: 'Cliente Regular'
     },
     {
         img: 'src/img/client3.png',
-        texto: 'Ive found this app to be incredibly helpful in keeping track of my plant care routine. Starting with the Free plan was great, and upgrading to Premium has allowed me to dive deeper into plant care. Its a fantastic tool for both beginners and experienced gardeners!"',
+        texto: 'He encontrado esta aplicación increíblemente útil para rastrear mi sistema de riego. El plan Free fue un excelente punto de partida, y al actualizarme a Premium, he mejorado la gestión de mi sistema. ¡Es imprescindible para agricultores, tanto nuevos como experimentados!',
         nombre: 'Emily Clark',
-        rol: 'Regular Customer'
+        rol: 'Cliente Regular'
     }
+   
 ];
 
 let indiceActual = 0;
@@ -28,6 +28,7 @@ function cambiarTestimonial(direccion) {
     const nombre = document.getElementById('testimonial-name');
     const rol = document.getElementById('testimonial-role');
 
+    // Animación fade-out
     img.classList.remove('fade-in', 'fade-out');
     texto.classList.remove('fade-in', 'fade-out');
     nombre.classList.remove('fade-in', 'fade-out');
@@ -39,7 +40,6 @@ function cambiarTestimonial(direccion) {
     rol.classList.add('fade-out');
 
     setTimeout(() => {
-        // Cambiar el contenido
         indiceActual += direccion;
 
         if (indiceActual < 0) {
@@ -53,16 +53,14 @@ function cambiarTestimonial(direccion) {
         nombre.textContent = testimonios[indiceActual].nombre;
         rol.textContent = testimonios[indiceActual].rol;
 
-        // Eliminar las clases de fade-out para reiniciar la animación
         img.classList.remove('fade-out');
         texto.classList.remove('fade-out');
         nombre.classList.remove('fade-out');
         rol.classList.remove('fade-out');
 
-        // Aplicar la clase fade-in para iniciar la animación de entrada
         img.classList.add('fade-in');
         texto.classList.add('fade-in');
         nombre.classList.add('fade-in');
         rol.classList.add('fade-in');
-    }, 250); // Tiempo de espera para la transición
+    }, 250); 
 }
