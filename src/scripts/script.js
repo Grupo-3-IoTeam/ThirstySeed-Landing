@@ -6,13 +6,13 @@ const testimonios = [
         rol: 'Regular Customer'
     },
     {
-        img: 'src/img/client2.png',
+        img: 'src/img/client2.PNG',
         texto: '"Managing my irrigation system has never been simpler. The Free plan was perfect for starting out, and the Premium plan has allowed me to automate and manage more sensors efficiently. This app is essential for anyone looking to improve their farm’s irrigation!',
         nombre: 'James Peterson',
         rol: 'Regular Customer'
     },
     {
-        img: 'src/img/client3.png',
+        img: 'src/img/client3.PNG',
         texto: 'I’ve found this app incredibly helpful in tracking my irrigation. The Free plan was a great entry point, and upgrading to Premium has enhanced my system management. It’s a must-have for farmers, whether new or experienced!',
         nombre: 'Emily Clark',
         rol: 'Regular Customer'
