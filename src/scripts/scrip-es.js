@@ -6,13 +6,13 @@ const testimonios = [
         rol: 'Cliente Regular'
     },
     {
-        img: 'src/img/client2.png',
+        img: 'src/img/client2.PNG',
         texto: '"Gestionar mi sistema de riego nunca ha sido más sencillo. El plan Free fue perfecto para comenzar, y el plan Premium me ha permitido automatizar y gestionar más sensores de manera eficiente. ¡Esta app es esencial para cualquiera que busque mejorar el riego de su granja!',
         nombre: 'James Peterson',
         rol: 'Cliente Regular'
     },
     {
-        img: 'src/img/client3.png',
+        img: 'src/img/client3.PNG',
         texto: 'He encontrado esta aplicación increíblemente útil para rastrear mi sistema de riego. El plan Free fue un excelente punto de partida, y al actualizarme a Premium, he mejorado la gestión de mi sistema. ¡Es imprescindible para agricultores, tanto nuevos como experimentados!',
         nombre: 'Emily Clark',
         rol: 'Cliente Regular'
