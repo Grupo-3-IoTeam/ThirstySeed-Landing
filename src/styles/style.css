@@ -879,3 +879,33 @@
         width: 60px; /* Ajusta el tamaño del logo */
     }
 }
+
+.videos-container {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.videos-container video {
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según tu diseño */
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2em;
+}
+
+.video-grid div {
+    width: 100%;
+    max-width: 45%; /* Cada video ocupará casi la mitad del contenedor */
+    text-align: center;
+}
+
+.video-grid video {
+    width: 100%;
+}
